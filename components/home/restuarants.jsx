@@ -34,7 +34,7 @@ const Restaurant = () => {
 
   return (
     <section className="flex p-2 flex-col gap-2 lg:gap-10 w-full bg-[#D9D9D980]/50 py-10 lg:bg-white relative">
-      <h1 className="font-bold text-base lg:text-[32px] text-black pl-2">
+      <h1 className="font-bold text-base lg:text-[32px] text-black pl-4">
         Order.Uk’s Popular Categories
       </h1>
       <div className="flex items-center justify-center flex-wrap rounded-xl gap-2 w-full lg:flex-nowrap lg:items-center lg:justify-start lg:rounded-xl lg:overflow-x-auto lg:whitespace-nowrap lg:gap-2 lg:w-full lg:scrollbar-hide">
