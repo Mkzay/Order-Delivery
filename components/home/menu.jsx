@@ -19,7 +19,7 @@ const Menu = () => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="w-full flex flex-col"
+      className="w-full flex flex-col p-2"
     >
       <div className="flex justify-between items-center">
         <h2 className="font-bold text-base text-black">

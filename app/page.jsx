@@ -4,11 +4,13 @@ import Menu from "@/components/home/menu";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Restaurant from "@/components/home/restuarants";
+import Locations from "@/components/home/locations";
+import LowerSection from "@/components/home/section"
 
 const Page = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-5 bg-white p-2 lg:px-10">
-      <div className="w-full flex items-center justify-center lg:justify-between lg:bg-[url('/images/woman.svg')] lg:bg-contain lg:bg-center lg:bg-no-repeat z-10 relative">
+    <section className="flex flex-col items-center justify-center gap-5 bg-white lg:px-10">
+      <div className="w-full p-2 flex items-center justify-center lg:justify-between lg:bg-[url('/images/woman.svg')] lg:bg-contain lg:bg-center lg:bg-no-repeat z-10 relative">
         <div className="flex flex-col gap-5 text-center items-center justify-center text-white w-full bg-accent rounded-xl p-10 lg:bg-white lg:w-auto lg:text-accent lg:text-left lg:items-start lg:p-0">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -65,6 +67,8 @@ const Page = () => {
       </div>
       <Menu />
       <Restaurant />
+      <Locations />
+      <LowerSection />
     </section>
   );
 };
