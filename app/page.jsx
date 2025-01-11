@@ -5,7 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Restaurant from "@/components/home/restuarants";
 import Locations from "@/components/home/locations";
-import LowerSection from "@/components/home/section"
+import LowerSection from "@/components/home/section";
+import Accordion from "@/components/home/accordion";
 
 const Page = () => {
   return (
@@ -57,12 +58,7 @@ const Page = () => {
           transition={{ duration: 0.7 }}
           className="hidden absolute right-6 -top-2 left-0 lg:flex lg:items-center lg:justify-center"
         >
-          <Image
-            src="images/woman.svg"
-            alt="orange"
-            width={700}
-            height={500}
-          />
+          <Image src="images/woman.svg" alt="orange" width={700} height={500} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
@@ -83,6 +79,7 @@ const Page = () => {
       <Restaurant />
       <Locations />
       <LowerSection />
+      <Accordion />
     </section>
   );
 };
